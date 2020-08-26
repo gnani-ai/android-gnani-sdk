@@ -35,7 +35,7 @@ You have to declare our service in the app where you are using the aar file
 
 ```
 ## import Recorder and SpeechService from aar library
-1.  Implement these two intefaces to your activity or fragment or service
+1.  Implement these two interfaces to your activity or fragment or service
 
 SpeechService.Listener, Recorder.RecordingStatusListener
 
@@ -43,11 +43,11 @@ SpeechService.Listener, Recorder.RecordingStatusListener
 
 Recorder.bind(yourContext);
 
-3.  Add the following code in clicklisetner of view with which you want to start the recording
+3.  Add the following code in click listener of view with which you want to start the recording
 
 Recorder.onRecord(languageCode);
 
-4.  Recording will be stopeed in two cases :
+4.  Recording will stop in two cases :
 
 a) If you click same view again b) after 15 seconds
 
